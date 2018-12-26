@@ -1,0 +1,11 @@
+This repository is just a collection of scripts which I am
+trying out to test out OpenCV and see if I can actually create
+something out of it.
+
+I am checking some dummy projects, and the following are the targets
+of this repository ( which might change as the requirements/sample use
+cases are found)
+
+- Identify the Gender and Age of a Person in a Photograph using OpenCV
+  This is very similar to what is there in Mobile Phones. Lets see if this
+  can be done and included into RaspberryPi :)
