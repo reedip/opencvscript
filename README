@@ -9,3 +9,9 @@ cases are found)
 - Identify the Gender and Age of a Person in a Photograph using OpenCV
   This is very similar to what is there in Mobile Phones. Lets see if this
   can be done and included into RaspberryPi :)
+
+
+NOTE: You need to run the imshow of OpenCV only on NON-ROOT users as ROOT
+users dont have access to XWindows ( which is nice )
+And you need to install **numpy** **opencv* ** and **python2-opencv** atleast
+on Fedora to make this code run
