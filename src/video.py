@@ -53,10 +53,10 @@ class VideoCV2:
             if not ret:
                 break    # self.vid.read() is False at the End of Video
             #converted_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+            # I found an issue where in GRAYSCALE videos were not being saved,
+            # due to DEPTH error and number of channels, so I skipped it.
             converted_frame = cv2.flip(frame, 0) # Flip in Vertical direction ( 0 degrees)
             self.out.write(converted_frame)
-            # I found an issue wherein GRAYSCALE videos were not being saved, due to DEPTH error,
-            # so I skipped it.
             cv2.imshow('frame', converted_frame)
             if cv2.waitKey(1) & 0xFF == ord('q'): # For a stream video, press 'q' to stop
                 break
